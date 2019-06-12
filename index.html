@@ -10,9 +10,10 @@
 
 <body>
     <h1 title="title">Survey Form For Market Square</h1>
-    <p id="description">Let us know how we can serve you better.</p>
+
 
     <form id="survey-form" method="GET" action="#">
+        <p id="description">Let us know how we can serve you better.</p>
         <div id="row">
             <div class="labels">
                 <label id="name-label" for="name">Name:</label>
@@ -39,7 +40,7 @@
         </div>
         <div id="row">
             <div class="labels">
-                <label for="occupation">Occupation:</label>
+                <label for="occupation">What is your Occupation:</label>
             </div>
             <div class="fields">
                 <select name="occupation" id="dropdown">
@@ -56,59 +57,62 @@
             </div>
             <div class="fields">
                 <div class="radio">
+                    <input type="radio" name="religion">
                     <label for="christian">Christian</label>
-                    <input type="radio" name="religion">
                 </div>
                 <div class="radio">
+                    <input type="radio" name="religion">
                     <label for="christian">Muslim</label>
-                    <input type="radio" name="religion">
                 </div>
                 <div class="radio">
-                    <label for="christian">Other</label>
                     <input type="radio" name="religion">
+                    <label for="christian">Other</label>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div id="row">
             <div class="labels">
-                <label for="Sections">Sections:</label>
+                <label for="Sections">Which Sections do you frequently purchase from:</label>
             </div>
             <div class="fields">
                 <div class="checkbox">
-                    <label for="groceries">groceries</label>
                     <input type="checkbox" name="section" value="groceries">
+                    <label for="groceries">groceries</label>
+
                 </div>
                 <div class="checkbox">
-                    <label for="toys">toys</label>
                     <input type="checkbox" name="section" value="toys">
+                    <label for="toys">toys</label>
                 </div>
                 <div class="checkbox">
-                    <label for="gaming">gaming</label>
                     <input type="checkbox" name="section" value="gaming">
+                    <label for="gaming">gaming</label>
                 </div>
                 <div class="checkbox">
-                    <label for="fashion">fashion</label>
                     <input type="checkbox" name="section" value="fashion">
+                    <label for="fashion">fashion</label>
                 </div>
                 <div class="checkbox">
-                    <label for="electronics">electronics</label>
                     <input type="checkbox" name="section" value="electronics">
+                    <label for="electronics">electronics</label>
                 </div>
                 <div class="checkbox">
-                    <label for="health and beauty">Health and beauty</label>
                     <input type="checkbox" name="section" value="Health and beauty">
+                    <label for="health and beauty">Health and beauty</label>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div id="row">
             <div class="labels">
                 <label for="comments">Comments:</label>
             </div>
             <div class="fields">
-                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                <textarea name="textarea" id="textarea" cols="24" rows="10"></textarea>
             </div>
         </div>
-        <input type="button" value="Submit" id="submit">
+        <div id="submitbutton">
+            <input type="button" value="Submit" id="submit">
+        </div>
     </form>
 </body>
 

@@ -1,0 +1,80 @@
+        body {
+            margin-top: 20px;
+            font-family: 'lato';
+            font-size: 24px;
+            background-color: rgb(144, 197, 197);
+        }
+        
+        #survey-form {
+            background-color: rgb(255, 245, 245);
+            margin-left: 300px;
+            margin-right: 300px;
+            border-radius: 10px;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+            box-shadow: 0.3px 0.3px 15px;
+        }
+        
+        #row {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            padding: 24px;
+        }
+        
+        .labels {
+            padding-top: 3px;
+            justify-self: end;
+            text-align: right;
+        }
+        
+        h1,
+        p {
+            text-align: center;
+        }
+        
+        #submitbutton {
+            text-align: center;
+        }
+        
+        #name,
+        #email,
+        #number,
+        #dropdown {
+            width: 200px;
+            height: 40px;
+            font-weight: 500;
+            border: 1px solid rgb(180, 180, 180);
+            border-radius: 3px;
+            padding: 10px;
+        }
+        
+        #submit {
+            width: 150px;
+            height: 60px;
+            background-color: rgb(73, 144, 211);
+            color: white;
+            border: 1px solid rgb(73, 144, 211);
+            font-size: 20px;
+            border-radius: 7px;
+        }
+        
+        @media (max-width:1150px) {
+            #survey-form {
+                background-color: rgb(255, 245, 245);
+                margin-left: 20px;
+                margin-right: 20px;
+                border-radius: 10px;
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 40px;
+                box-shadow: 0.3px 0.3px 15px;
+            }
+            body {
+                font-size: 20px;
+            }
+        }
