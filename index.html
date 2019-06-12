@@ -4,11 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>survey form</title>
 </head>
 
 <body>
+    <h1 title="title">Survey Form For Market Square</h1>
+    <p id="description">Let us know how we can serve you better.</p>
 
+    <form id="survey-form" method="GET" action="#">
+        <div id="row">
+            <div class="labels">
+                <label id="name-label" for="name">Name:</label>
+            </div>
+            <div class="fields">
+                <input type="text" placeholder="Please Enter Name" id="name" required>
+            </div>
+        </div>
+        <div id="row">
+            <div class="labels">
+                <label id="email-label" for="email">Email:</label>
+            </div>
+            <div class="fields">
+                <input type="email" placeholder="Please Enter Email" id="email" required>
+            </div>
+        </div>
+        <div id="row">
+            <div class="labels">
+                <label id="age-label" for="Age">Age:</label>
+            </div>
+            <div class='fields'>
+                <input placeholder="Age" type="number" name="Age" id="number" min="0" max="200">
+            </div>
+        </div>
+        <div id="row">
+            <div class="labels">
+                <label for="occupation">Occupation:</label>
+            </div>
+            <div class="fields">
+                <select name="occupation" id="dropdown">
+                    <option disabled value>Select an option</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Lawyer">Lawyer</option>
+                    <option value="Engineer">Engineer</option>
+                </select>
+            </div>
+        </div>
+        <div id="row">
+            <div class="labels">
+                <label for="religion">Religion:</label>
+            </div>
+            <div class="fields">
+                <div class="radio">
+                    <label for="christian">Christian</label>
+                    <input type="radio" name="religion">
+                </div>
+                <div class="radio">
+                    <label for="christian">Muslim</label>
+                    <input type="radio" name="religion">
+                </div>
+                <div class="radio">
+                    <label for="christian">Other</label>
+                    <input type="radio" name="religion">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="labels">
+                <label for="Sections">Sections:</label>
+            </div>
+            <div class="fields">
+                <div class="checkbox">
+                    <label for="groceries">groceries</label>
+                    <input type="checkbox" name="section" value="groceries">
+                </div>
+                <div class="checkbox">
+                    <label for="toys">toys</label>
+                    <input type="checkbox" name="section" value="toys">
+                </div>
+                <div class="checkbox">
+                    <label for="gaming">gaming</label>
+                    <input type="checkbox" name="section" value="gaming">
+                </div>
+                <div class="checkbox">
+                    <label for="fashion">fashion</label>
+                    <input type="checkbox" name="section" value="fashion">
+                </div>
+                <div class="checkbox">
+                    <label for="electronics">electronics</label>
+                    <input type="checkbox" name="section" value="electronics">
+                </div>
+                <div class="checkbox">
+                    <label for="health and beauty">Health and beauty</label>
+                    <input type="checkbox" name="section" value="Health and beauty">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="labels">
+                <label for="comments">Comments:</label>
+            </div>
+            <div class="fields">
+                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <input type="button" value="Submit">
+    </form>
 </body>
 
 </html>
